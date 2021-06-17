@@ -18,6 +18,10 @@ app.get("/", function(req, res) {
     res.end(a);
 });
 
-app.listen(1337, "0.0.0.0");
-console.log("Server running on http://0.0.0.0:1337/");
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port, "0.0.0.0");
+console.log(`Server running on http://0.0.0.0:${port}/`);
 

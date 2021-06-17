@@ -2,6 +2,21 @@
 
 Skeleton project for extreme startup
 
+## Setup
+
+npm install
+
 ## Run
 
 node extreme_startup.js
+
+## Heroku
+
+### Run locally
+
+`heroku local`
+
+## References
+
+https://devcenter.heroku.com/articles/preparing-a-codebase-for-heroku-deployment
+
